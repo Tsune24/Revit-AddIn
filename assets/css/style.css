@@ -14,7 +14,6 @@ body{
 /*
 grid
 */
-
 .grid{
     display: flex;
 }
@@ -25,6 +24,9 @@ grid
     align-items: center;
     justify-content: center;
 
+}
+.grid-col-1 > .grid-item{
+    width: 100%;
 }
 .grid-col-2 > .grid-item{
     width: 50%;
@@ -39,19 +41,12 @@ grid
 /* 
 section
 */
-.section{
-    padding: 30px 15px;
-}
-.section.section-secondary{
-    background-color: #efefef;
-}
 .section-headline{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     margin: 20px 0px;
 }
-
 .section-button{
     margin-top: 40px;
     text-align: center;
@@ -64,15 +59,12 @@ title
     text-align: center;
 }
 
-
 /*
 card
 */
-
 .card{
     padding: 0px 10px;
 }
-
 .card-img{
     width: 100%;
     height: auto;
@@ -80,37 +72,35 @@ card
 .card-info{
     padding: 5px 10px;
 }
-/* .card-time{} */
+
+/*
+card-text
+*/
 .card-headline{
     margin: 0px;
 }
 .card-description{
     margin: 0px;
 }      
-.avator{
+.operation{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: start;
     padding: 10px;
 }
-.avator-name{
+.operation-name{
     font-weight: bold;
     padding-left: 15px;
 }
-.avator-img{
+.operation-img{
     margin: 0px;
     overflow: hidden;
-}
-
-.icon{
-    width: 50px;
 }
 
 /*
 button
 */
-
 .button{
     display: inline-block;
     color: #fff;
@@ -126,7 +116,4 @@ button
 }
 .button:hover{
     box-shadow: 0 0 0 #bbb;
-}
-.button.button-submission{
-    background-color: #92d3ca;
 }
